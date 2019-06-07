@@ -157,3 +157,122 @@
     }
   }
 }// home
+
+.about {
+  .flex(column);
+
+  @media @phone {
+    width: 90%;
+  }
+}
+
+.our-story {
+  margin-top: 2rem;
+
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+} // our-story
+
+
+.our-team {
+  .flex(row);
+
+  @media @phone {
+    .flex(column);
+  }
+
+  .employee {
+    width: 30%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: @border-real;
+
+    @media @phone {
+      width: 100%;
+      margin: 2rem 0;
+    }
+
+    h4 {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .img-1 {
+    background: url('../img/img-1.jpg');
+    background-position: center;
+    background-size: cover;
+    .custom-pic(100%);
+  }
+
+  .img-2 {
+    background: url('../img/img-2.jpg');
+    background-position: center;
+    background-size: cover;
+    .custom-pic(100%);
+  }
+
+  .img-3 {
+    background: url('../img/img-3.jpg');
+    background-position: center;
+    background-size: cover;
+    .custom-pic(100%);
+  }
+} //our-team
+
+.contact-us {
+  text-align: center;
+  padding: 2rem;
+  .flex(column);
+
+  h3 {
+    margin: 2rem 0;
+  }
+
+  label {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  input {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 2rem;
+
+    @media @phone {
+      border: 1px solid @river-bend;
+    }
+  }
+
+  .btn {
+    .custom-btn(@ebony-clay, 1.2rem, @sea-shell);
+    padding: 2rem;
+    width: 100%;
+
+    &:hover{
+      background-color: @shuttle-gray;
+      color: @porcelain;
+    }
+
+    a {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
