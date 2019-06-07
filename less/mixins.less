@@ -1,1 +1,28 @@
 // Mixins Here
+
+.flex(@direction: row) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.flex-center(@justify: center, @align: center) {
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-btn(@bg-color: @ebony-clay, @radius: 1rem, @color: @wild-sand) {
+    background-color: @bg-color;
+    border-radius: @radius;
+    color: @color;
+}
+
+.custom-pic(@radius: 50%) {
+    border-radius: @radius;
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.about {
+    .flex();
+}
